@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">List_View_Basic</string>
+    <string-array name="arrQuocGia">
+        <item>Việt Nam</item>
+        <item>Ba Lan</item>
+        <item>Hà Lan</item>
+        <item>Trung Quốc</item>
+        <item>Úc</item>
+        <item>Mỹ</item>
+        <item>Nhật Bản</item>
+        <item>Hàn Quốc</item>
+        <item>Singapo</item>
+        <item>Thái Lan</item>
+        <item>Thổ Nhĩ Kì</item>
+    </string-array>
+</resources>
