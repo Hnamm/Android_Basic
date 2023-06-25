@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/text"
+        android:drawableLeft="@drawable/baseline_people_alt_24"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Use name"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColorHint="@color/white"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/text"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColorHint="@color/white"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="Login"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <CheckBox
+        android:id="@+id/checkBox_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="10dp"
+        android:text="Remember Me"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    <TextView
+        android:id="@+id/forgot_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/checkBox_login"
+        android:layout_toRightOf="@+id/checkBox_login"
+        android:text="Forgot Password"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    <LinearLayout
+            android:id="@+id/idorigin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/gg"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/fb"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/tw"
+                tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_loginwith"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-Or Login With-"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_above="@id/idorigin"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+</RelativeLayout>
